@@ -1,0 +1,68 @@
+/* Style the buttons that are used to open and close the branch-accordion panel */
+.branch-accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .branch-accordion:focus {
+    background-color: #eee;
+    color: #444;
+  }
+  
+  .branch-accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .branch-accordion.active {
+    background-color: #ccc;
+    color: #444;
+  }
+  
+  .branch-accordion.active:after {
+    content: "\2212";
+  }
+  
+  .branch-accordion:hover {
+    background-color: #ccc;
+    color: #444;
+  }
+  
+  /* Style the branch-accordion panel. Note: hidden by default */
+  .branch-panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .branch-panel.active {
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .branch-panel p {
+    margin-bottom: 0;
+  }
+  
+  .branch-panel .branch-link {
+    color: #333 !important;
+    line-height: 1.4;
+    font-size: 80%;
+  }
